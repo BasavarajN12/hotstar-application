@@ -1,17 +1,17 @@
 variable "instance_name" {
-    default = "Monitoring_server"  # Names of the instance
+    default = "Hotstar-Monitoring_server"  # Names of the instance
 }
 
 variable "key_name" {
-  default = "terra"                  # Names of key in aws
+  default = "sydneykey"                  # Names of key in aws
 }
 
 
 variable "access_key" {
-  default = "insert"                # aws access key
+  default = "AKIAYHAMLQEUJ6VOPOHJ"                # aws access key
 }
 
 variable "secret_key" {
-  default = "insert"         # aws secret key
+  default = "wMoa+tiQAl+LZpRZfPmW6y2gabN0HLJmBlEjf937"         # aws secret key
 }
 
