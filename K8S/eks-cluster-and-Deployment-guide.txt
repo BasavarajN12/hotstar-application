@@ -111,6 +111,12 @@ eksctl create cluster --name cloudaseem-cluster4 --region ap-south-1 --node-type
 `
 eksctl create cluster --name cloudaseem-cluster4 --region us-east-1 --node-type t2.medium  --zones us-east-1a,us-east-1b
 
+## sydney: <br/>
+`
+eksctl create cluster --name basavaraj-cluster4 --region ap-southeast-2 --node-type t2.large --nodes-min 2 --nodes-max 2 --zones ap-southeast-2a,ap-southeast-2b
+`
+
+
 ## Note: Cluster creation will take 5 to 10 mins of time (we have to wait). After cluster created we can check nodes using below command.
 
 
