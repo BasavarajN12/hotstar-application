@@ -54,7 +54,7 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build -t hotstar1 ."
-                       sh "docker tag hotstar basavarajnuchhi12/hotstar1:latest "
+                       sh "docker tag hotstar1 basavarajnuchhi12/hotstar1:latest "
                        sh "docker push basavarajnuchhi12/hotstar1:latest"
                     }
                 }
