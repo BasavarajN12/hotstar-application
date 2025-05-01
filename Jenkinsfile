@@ -53,21 +53,21 @@ pipeline{
             steps{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
-                       sh "docker build -t hotstar ."
-                       sh "docker tag hotstar basavarajnuchhi12/hotstar:latest "
-                       sh "docker push basavarajnuchhi12/hotstar:latest"
+                       sh "docker build -t hotstar1 ."
+                       sh "docker tag hotstar basavarajnuchhi12/hotstar1:latest "
+                       sh "docker push basavarajnuchhi12/hotstar1:latest"
                     }
                 }
             }
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image basavarajnuchhi12/hotstar:latest > trivyimage.txt" 
+                sh "trivy image basavarajnuchhi12/hotstar1:latest > trivyimage.txt" 
             }
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name hotstar -p 3000:3000 basavarajnuchhi12/hotstar:latest'
+                sh 'docker run -d --name hotstar -p 3000:3000 basavarajnuchhi12/hotstar1:latest'
             }
         }
 
