@@ -27,7 +27,7 @@ Prerequisites
 
 Step-1
 
-1) Launch new Ubuntu VM using AWS Ec2 ( t2.micro )
+1) Launch new Ubuntu VM using AWS Ec2 ( t2.large )
 
 2) Install AWS CLI latest version using below commands 
 
