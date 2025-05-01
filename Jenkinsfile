@@ -40,7 +40,7 @@ pipeline{
         }
         stage('OWASP FS SCAN') {
             steps {
-                dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit --nvdApiKey 915a4c3a-bebe-4e12-9e45-64285041cedb', odcInstallation: 'DC'
+                dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit --nvdApiKey 28a97fc6-8175-4a18-969f-8633525fab2b', odcInstallation: 'DC'
                 dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
            }
         }
